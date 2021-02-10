@@ -1,2 +1,3 @@
-# js-examples
-Ejercicios en Javascript
+# Ejercicios en Javascript
+
+Repositorio con ejercicios en Javascript desde básico hasta avanzado.
