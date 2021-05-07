@@ -1,0 +1,36 @@
+
+html, body {
+  background-color: #212121;
+}
+
+h1 {
+  color: white;
+}
+
+.table > thead {
+  color: white;
+}
+
+.table-row {
+  color: white;
+}
+
+.table-row > th > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+label {
+  color: white;
+}
+
+.img-thumbnail--placer {
+  min-width: 100px;
+  width: auto;
+  max-width: 300px;
+  min-height: 100px;
+  height: auto;
+  background-color: blanchedalmond;
+  margin-bottom: 100px;
+}

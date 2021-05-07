@@ -10,4 +10,7 @@ Ordenadas de menor a mayor dificultad.
   - Generación de archivos minificados de estilos CSS  y vinculación al HTML.
   - Preservación de assets.
   - Automatización de tareas como limpieza de carpeta /dist en cada $npm run build.
-- **/node-serve**. Descripción aquí. [nombre de link](https://...).
+- **/http-requests**. Proyecto web que consume la API de [Chistes de Chuck](https://api.chucknorris.io/) a través de HTTP.
+  - Petición GET con fetch.
+  - Promesas en cadena.
+  - Subida de imagenes con Cloudinary.

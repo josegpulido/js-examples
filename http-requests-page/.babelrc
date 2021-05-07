@@ -1,0 +1,8 @@
+{
+  "presets": [
+    // Transpilar sintaxis moderna a ES5
+    "@babel/preset-env",
+    // Minificar el código de Javascript
+    "minify"
+  ]
+}
