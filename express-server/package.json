@@ -1,0 +1,16 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "Ejercicios en Javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "dev": "NODE_ENV=development nodemon ./bin/www"
+  },
+  "author": "José Pulido",
+  "license": "MIT",
+  "devDependencies": {
+    "dot-env": "^0.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
