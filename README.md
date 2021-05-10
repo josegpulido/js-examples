@@ -17,3 +17,8 @@ Ordenadas de menor a mayor dificultad y por tecnología.
 - **/express-server**. API endpoint básico con nodejs y express.
   - Manejo básico de variables de entorno.
   - Manejo básico de rutas por GET.
+- **/todo-app-console**. Aplicacion de TODOs para consola. [Demostración](https://drive.google.com/file/d/1zJJC-RhkJfh5b_aFFkBP0XmIESk8F6Fe/view?usp=sharing)
+  - Manejo avanzado de interfaces gráficas para consola con inquirer.js.
+  - Coloreando impresiones en consola con colors.js.
+  - Generación de identificadores únicos con uuidv4.
+  - Escritura y lectura de un archivo json en el directorio del proyecto a modo de base datos.
