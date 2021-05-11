@@ -22,3 +22,7 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Coloreando impresiones en consola con colors.js.
   - Generación de identificadores únicos con uuidv4.
   - Escritura y lectura de un archivo json en el directorio del proyecto a modo de base datos.
+- **/weather-app-console**. Aplicación que para consultar el clima de una ciudad desde consola. [Demostración](https://drive.google.com/file/d/1dsmeNVoJdaZCTpQS_Gg0JfcklZKlVNx3/view?usp=sharing)
+  - Manejo básico de variables de entorno con paquete dotenv.
+  - Consumo del API endpoint de Mapbox Places y OpenWeatherMap a través de dotenv axios.
+  - Historial de llamadas a API endpoints.
