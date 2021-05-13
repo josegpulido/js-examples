@@ -14,9 +14,6 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Petición GET con fetch.
   - Promesas en cadena.
   - Subida de imagenes con Cloudinary.
-- **/express-server**. API endpoint básico con nodejs y express.
-  - Manejo básico de variables de entorno.
-  - Manejo básico de rutas por GET.
 - **/todo-app-console**. Aplicacion de TODOs para consola. [Demostración](https://drive.google.com/file/d/1zJJC-RhkJfh5b_aFFkBP0XmIESk8F6Fe/view?usp=sharing)
   - Manejo avanzado de interfaces gráficas para consola con inquirer.js.
   - Coloreando impresiones en consola con colors.js.
@@ -26,3 +23,7 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Manejo básico de variables de entorno con paquete dotenv.
   - Consumo del API endpoint de Mapbox Places y OpenWeatherMap a través de dotenv axios.
   - Historial de llamadas a API endpoints.
+- **/express-server**. Servidor web con manejo básico de rutas.
+  - Manejo básico de rutas tipo GET.
+  - Generación de templates semi-dinámicos con express-handlebars.
+  - Renderizado en el lado del servidor de app de Angular 2+ genérica.
