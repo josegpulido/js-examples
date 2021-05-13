@@ -1,0 +1,31 @@
+
+html, body {
+  background-color: beige;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.custom-footer {
+  width: 100%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-container {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 15px 0px;
+}
+
+.links-container > a {
+  color: darkblue;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0px 5px;
+}

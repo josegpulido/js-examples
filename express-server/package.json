@@ -10,7 +10,9 @@
   "author": "José Pulido",
   "license": "MIT",
   "devDependencies": {
-    "dot-env": "^0.0.1",
     "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express-handlebars": "^5.3.2"
   }
 }
