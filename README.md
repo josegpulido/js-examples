@@ -27,3 +27,9 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Manejo básico de rutas tipo GET.
   - Generación de templates semi-dinámicos con express-handlebars.
   - Renderizado en el lado del servidor de app de Angular 2+ genérica.
+- **/basic-rest-api**. Servidor REST API básico.
+  - Encapsulamiento de Express mediante una clase.
+  - Manejo de rutas (GET, PUT, POST, DELETE, PATCH) a modo de middleware.
+  - Implementación básica de CORS.
+  - Implementación básica de middleware express.json().
+  - Procesamiento de parámetros de segmento y parámetros opcionales.
