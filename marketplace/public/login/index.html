@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión</title>
+  <script src="../main.js"></script>
+  <!-- Meta tag requerido por Google Sign In -->
+  <meta name="google-signin-client_id" content="522149553112-m8q455qoqknbog42sb1jo8psovpl5iae.apps.googleusercontent.com">
+</head>
+<body>
+
+  <h1>Inicia sesión</h1>
+  <label for="userEmail">Correo electrónico</label>
+  <br>
+  <input type="email" id="userEmail">
+  <br>
+  <label for="userPassword">Contraseña</label>
+  <br>
+  <input type="password" id="userPassword">
+
+  <br><br>
+  <button>Continuar</button>
+
+  <br><br>
+  <p style="max-width: 450px;">
+    <i>
+      La siguiente implementación de Google Sign In no está optimizada.
+    </i>
+    <br><br>
+    Este botón llama a una ruta del API endpoint que crea un usuario. Lo correcto sería
+    solo jalar el token y guardarlo en el localStorage. Para crear un usuario con Google,
+    se debería crear otra ruta en /signup y ahí dar ambas opciones a los usuarios: registrarse
+    de forma genérica y registrarse con Google.
+    <br><br>
+    Esta aplicación web es estrictamente ilustrativa. Para ver la respuesta del endpoint,
+    <strong>
+      abrir la consola del navegador
+    </strong>.
+  </p>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <a href="#" onclick="signOut();">Sign out</a>
+
+  <!-- Scripts requeridos por Google Sign In -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</body>
+</html>

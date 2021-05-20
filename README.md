@@ -9,27 +9,37 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Minificación e inyección de estilos CSS al Javascript.
   - Generación de archivos minificados de estilos CSS  y vinculación al HTML.
   - Preservación de assets.
-  - Automatización de tareas como limpieza de carpeta /dist en cada $npm run build.
+  - Automatización de tareas como limpieza de carpeta /dist en cada $ npm run build.
 - **/http-requests**. Proyecto web con Javascript puro que consume la API de [Chistes de Chuck Norris](https://api.chucknorris.io/) a través de HTTP.
   - Petición GET con fetch.
   - Promesas en cadena.
-  - Subida de imagenes con Cloudinary.
+  - Subida de imagenes a Cloudinary.
 - **/todo-app-console**. Aplicacion de TODOs para consola. [Demostración](https://drive.google.com/file/d/1zJJC-RhkJfh5b_aFFkBP0XmIESk8F6Fe/view?usp=sharing)
-  - Manejo avanzado de interfaces gráficas para consola con inquirer.js.
-  - Coloreando impresiones en consola con colors.js.
-  - Generación de identificadores únicos con uuidv4.
+  - Manejo avanzado de interfaces gráficas para consola con paquete inquirer.js.
+  - Coloreando impresiones en consola con paquete colors.
+  - Generación de identificadores únicos con paquete uuidv4.
   - Escritura y lectura de un archivo json en el directorio del proyecto a modo de base datos.
 - **/weather-app-console**. Aplicación que para consultar el clima de una ciudad desde consola. [Demostración](https://drive.google.com/file/d/1dsmeNVoJdaZCTpQS_Gg0JfcklZKlVNx3/view?usp=sharing)
   - Manejo básico de variables de entorno con paquete dotenv.
-  - Consumo del API endpoint de Mapbox Places y OpenWeatherMap a través de dotenv axios.
+  - Consumo del API endpoint de Mapbox Places y OpenWeatherMap a través de axios.
   - Historial de llamadas a API endpoints.
 - **/express-server**. Servidor web con manejo básico de rutas. [Demostración](https://express-app-josegpulido.herokuapp.com/)
   - Manejo básico de rutas tipo GET.
-  - Generación de templates semi-dinámicos con express-handlebars.
+  - Generación de templates semi-dinámicos con paquete express-handlebars.
   - Renderizado en el lado del servidor de app de Angular 2+ genérica.
 - **/basic-rest-api**. Servidor REST API básico.
   - Encapsulamiento de Express mediante una clase.
   - Manejo de rutas (GET, PUT, POST, DELETE, PATCH) a modo de middleware.
-  - Implementación básica de CORS.
+  - Implementación básica de paquete cors.
   - Implementación básica de middleware express.json().
   - Procesamiento de parámetros de segmento y parámetros opcionales.
+- **/marketplace**. Servidor REST API con conexión a MongoDB y autenticación de usuarios que sirve una marketplace de artículos sobre la trilogía de Back to the Future. [Demostración](...)
+  - Conexión a MongoDB Atlas con paquete mongoose.
+  - Manejo de Schemas de MongoDB.
+  - Encriptación de contraseña por hash de una vía con paquete bcrypt.js.
+  - Implementación básica-intermedia de paquete express-validator.
+  - Autenticación de usuarios y generación de tokens de sesión con paquete jsonwebtoken.
+  - Autenticación de usuarios de Google y validación de tokens de sesión respectivos con paquete google-auth-library.
+  - Protección de rutas para usuarios autenticados y/o según su rol con middlewares personalizados.
+  - Búsquedas en colecciones de MongoDB a través de queries.
+  - Implementación básica de subida y descarga de imagenes a servidor con paquete express-fileupload.
