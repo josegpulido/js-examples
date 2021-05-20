@@ -33,7 +33,7 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Implementación básica de paquete cors.
   - Implementación básica de middleware express.json().
   - Procesamiento de parámetros de segmento y parámetros opcionales.
-- **/marketplace**. Servidor REST API con conexión a MongoDB y autenticación de usuarios que sirve una marketplace de artículos sobre la trilogía de Back to the Future. [Demostración](...)
+- **/marketplace**. Servidor REST API con conexión a MongoDB y autenticación de usuarios que sirve una marketplace de artículos sobre la trilogía de Back to the Future. [Demostración](https://node-marketplace-josegpulido.herokuapp.com/)
   - Conexión a MongoDB Atlas con paquete mongoose.
   - Manejo de Schemas de MongoDB.
   - Encriptación de contraseña por hash de una vía con paquete bcrypt.js.
@@ -43,3 +43,23 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Protección de rutas para usuarios autenticados y/o según su rol con middlewares personalizados.
   - Búsquedas en colecciones de MongoDB a través de queries.
   - Implementación básica de subida y descarga de imagenes a servidor con paquete express-fileupload.
+  - Rutas de API REST:
+    - **POST** ...herokuapp.com/auth/login (Obtener JWT de sesión)
+    - **POST** ...herokuapp.com/user (Crear usuario)
+    - **POST** ...herokuapp.com/user/with-google (Crear usuario con Google Sign In)
+    - **PUT** ...herokuapp.com/user/:id (Actualizar usuario)
+    - **GET** ...herokuapp.com/user (Obtener usuarios)
+    - **DELETE** ...herokuapp.com/user/:id (Borrar usuario)
+    - **GET** ...herokuapp.com/category (Obtener categorías)
+    - **GET** ...herokuapp.com/category/:id (Obtener categoría en específico)
+    - **POST** ...herokuapp.com/category/ (Crear categoría)
+    - **PUT** ...herokuapp.com/category/:id (Actualizar categoría)
+    - **DELETE** ...herokuapp.com/category/:id (Borrar categoría)
+    - **GET** ...herokuapp.com/product (Obtener productos)
+    - **GET** ...herokuapp.com/product/:id (Obtener producto en específico)
+    - **POST** ...herokuapp.com/product (Crear producto)
+    - **PUT** ...herokuapp.com/product/:id (Actualizar producto)
+    - **DELETE** ...herokuapp.com/product/:id (Borrar producto)
+    - **GET** ...herokuapp.com/search/products/:query (Ejecutar búsqueda de productos)
+    - **POST** ...herokuapp.com/images/product/:id (Subir imagen de producto)
+    - **GET** ...herokuapp.com/images/product/:id (Descargar imagen de producto)
