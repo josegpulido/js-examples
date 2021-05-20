@@ -1,0 +1,12 @@
+
+html, body {
+  padding: 20px;
+}
+
+.socket-disconnected {
+  color: red;
+}
+
+.socket-connected {
+  color: green;
+}
