@@ -68,3 +68,5 @@ Ordenadas de menor a mayor dificultad y por tecnología.
 - **/socket-chat**. Aplicación de chat en tiempo real.
   - Autenticación de JWT en conexiones de web sockets.
   - Creación de salas y mensajes privados.
+- **/ts-express-server**. Servidor web Express en Typescript.
+  - Configuración básica de Typescript y scripts.
