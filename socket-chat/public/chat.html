@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat online</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Librería CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+  <h2 class="mt-4">Chat online con Web Socket</h2>
+  <div class="row mt-5">
+    <div class="col-sm-6">
+
+      <h3 id="chat-headline"></h3>
+      <hr>
+      <!-- <input type="text" id="txt-uid" placeholder="Identificador de usuario" class="form-control mb-2" autocomplete="false"> -->
+      <input type="text" id="txt-message" placeholder="Mensaje" class="form-control mb-2" autocomplete="false">
+      <br><br>
+
+      <h3>Usuarios conectados</h3>
+      <hr>
+      <ul id="ul-online-users"></ul>
+
+    </div>
+    <div class="col-sm-6">
+
+
+
+      <h3>Chat</h3>
+      <hr>
+      <ul id="ul-chat"></ul>
+      
+    </div>
+  </div>
+  
+  <!-- Librería de Socket.io (ver ./server.model.js para más información) -->
+  <script src="./socket.io/socket.io.js"></script>
+  <!-- Javascript -->
+  <script src="./js/chat.js"></script>
+</body>
+</html>

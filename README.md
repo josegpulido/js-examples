@@ -63,6 +63,8 @@ Ordenadas de menor a mayor dificultad y por tecnología.
     - **GET** ...herokuapp.com/search/products/:query (Ejecutar búsqueda de productos)
     - **POST** ...herokuapp.com/images/product/:id (Subir imagen de producto)
     - **GET** ...herokuapp.com/images/product/:id (Descargar imagen de producto)
-- **/socket-server**. Servidor web básico que implementa web sockets con Socket.io.
-- **/waiting-line-app**. Servidor de app web para gestión de filas de espera.
-  - Implementación básica-intermedia de paquete socket.io.
+- **/socket-server**. Servidor web que implementa web sockets.
+  - Implementación de web sockets con Socket.io.
+- **/socket-chat**. Aplicación de chat en tiempo real.
+  - Autenticación de JWT en conexiones de web sockets.
+  - Creación de salas y mensajes privados.

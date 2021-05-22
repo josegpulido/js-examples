@@ -1,0 +1,73 @@
+
+html, body {
+  padding: 20px;
+}
+
+input {
+  max-width: 300px;
+}
+
+p[id='lbl-error'] {
+  font-weight: bold;
+  color: red;
+}
+
+.single-user {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.single-user > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.single-user > div {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 15px;
+}
+
+.single-user > div > p {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.single-user > div > .display-name {
+  font-weight: bold;
+  color: green;
+}
+
+.chat-bubble {
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: whitesmoke;
+  margin-bottom: 15px;
+}
+
+.chat-bubble > p {
+  margin-bottom: 0px;
+}
+
+.chat-bubble > .timestamp {
+  margin-top: 3px;
+  color: lightslategray;
+}
+
+.chat-bubble > .author {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 15px;
+  background-color: lightgrey;
+  padding: 1.5px 7px;
+  border-radius: 6px;
+}
+
+.chat-bubble > .author > p {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "uid": "9f2ce4af-ebee-4dd2-965d-94b9dc338276",
+    "displayName": "José",
+    "email": "jose@email.com",
+    "password": "123456"
+  },
+  {
+    "uid": "358cfe59-9878-491e-b80a-8d5a42e819f9",
+    "displayName": "Jesica",
+    "email": "jesica@email.com",
+    "password": "123456"
+  },
+  {
+    "uid": "19629d60-9246-4ca6-b17a-a5f9bacb7272",
+    "displayName": "Marlene",
+    "email": "marlene@email.com",
+    "password": "123456"
+  }
+]

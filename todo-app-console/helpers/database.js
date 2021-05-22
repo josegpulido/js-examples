@@ -17,7 +17,12 @@ function getCollection() {
   if (!fs.existsSync(DATABASE_PATH)) {
     return {};
   }
-  // Leyendo el archivo y parseando resultado
+  /**
+   * Leyendo el archivo y parseando resultado.
+   * 
+   * En lugar de fs, es completamente posible leer un archivo json
+   * mediante la sentencia de node require().
+   */
   const raw = fs.readFileSync(DATABASE_PATH, { encoding: 'UTF-8' });
   const collection = JSON.parse(raw);
   let json = {};
