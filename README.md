@@ -70,3 +70,5 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Creación de salas y mensajes privados.
 - **/ts-express-server**. Servidor web Express en Typescript.
   - Configuración básica de Typescript y scripts.
+- **/web-scraping**. Bot de web scraping con puppeteer.
+  - Extracción de título h1 de la web Wikipedia con paquete puppeteer.
