@@ -72,3 +72,5 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Configuración básica de Typescript y scripts.
 - **/web-scraping**. Bot de web scraping con puppeteer.
   - Extracción de título h1 de la web Wikipedia con paquete puppeteer.
+- **/electron-app**. Aplicación web empaquetada para escritorio (Windows, Mac y Linux) con electron.
+  - Manejo básico de empaquetamiento con paquete electron.

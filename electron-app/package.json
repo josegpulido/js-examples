@@ -1,0 +1,15 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "electron ./index.js"
+  },
+  "keywords": [],
+  "author": "José Pulido <memo.board.9999@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^13.1.1"
+  }
+}
