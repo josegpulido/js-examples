@@ -3,6 +3,7 @@
 Ordenadas de menor a mayor dificultad y por tecnología.
 
 ### Indice
+- **/ecmascript**. Ejemplos de características de Javascript escritos en distintas versiones de ECMAScript.
 - **/webpack-page**. Configuración básica de Webpack 4+ para proyectos web con Javascript puro.
   - Configuración de entorno de desarrollo y entorno de producción mediante archivos de configuración.
   - Transpilación de sintaxis moderna a ES5 con Babel y vinculación al HTML.
