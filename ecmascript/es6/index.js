@@ -183,6 +183,44 @@ module.exports = {
 }
 
 // ==================================================================================
+// Proxies ==========================================================================
+// ==================================================================================
+
+// ...Antes de ES6
+// No existía...
+
+/**
+ * ...En ES6 o superior
+ * 
+ * Es una herramienta que permite interecptar y redefinir operaciones
+ * fundamentales de un objeto (trampas), como:
+ * - get
+ * - set
+ * - apply
+ * - has
+ * - hasOwnProperty
+ * - getPrototypeOf
+ * - setPrototypeOf
+ */
+// Definiendo objeto a interceptar
+const colores = {
+  red: 'Rojo',
+  green: 'Verde',
+  blue: 'Azul'
+};
+// Definiendo handler
+class Handler {
+  // Usando un getter como interceptor
+  get(object, property) {
+    console.log('Hola, desde el interceptor!');
+    return object[property];
+  }
+}
+const proxiedObj = new Proxy(colores, new Handler());
+// Al llamar a la propiedad, se está llamando al interceptor en automático
+console.log(proxiedObj.red);
+
+// ==================================================================================
 // Generadores (generators) =========================================================
 // ==================================================================================
 
@@ -194,19 +232,69 @@ module.exports = {
  * 
  * Para establecer un generator, se requiere colocar un
  * asterisco en seguida de la palabra reservada function.
- * Esta función especial retornará un valor que almacenará en
- * un estado interno en memoria al que se podrá acceder
- * desde la instancia generada.
+ * Esta función especial posee la particular característica
+ * de poder pausar su ejecución y luego volver al punto
+ * donde se quedaron recordando su scope.
+ * 
+ * Un estado dinámico también es almacenado a través de
+ * la keword yield, y cada que esta se invoque, el
+ * generator saldrá de la función y continuará ejecutando
+ * el código del hilo principal de Javascript.
+ * 
+ * Cuando el método .next() del generator se llame, este
+ * regresará exactamente después del yield en que se quedó.
+ * 
+ * El generator cambiará su estado de 'suspended' a 'done'
+ * una vez que todo su código se haya ejecutado, incluyendo
+ * todos sus yield.
  */
-function* helloWorld() {
-  if (true) {
-    yield 'Hello, ';
-  }
-  if (true) {
-    yield 'world';
+function* myGenerator() {
+  console.log('Inicia generator');
+  yield 9;
+  console.log('Mensaje uno');
+  yield false;
+  console.log('Mensaje dos');
+  yield new Array(9, 4, 100);
+  console.log('Termina generator');
+}
+function print({value, done}) {
+  console.log(`value: ${value} | done: ${done}\n`);
+}
+const example = myGenerator();
+setTimeout(() => print(example.next()), 1000);
+setTimeout(() => print(example.next()), 2000);
+setTimeout(() => print(example.next()), 3000);
+setTimeout(() => print(example.next()), 4000);
+
+/**
+ * El siguiente generator genera un id secuacial en cada
+ * invocación.
+ */
+function* idGenerator() {
+  let i = 0;
+  while (true) {
+    /**
+     * yield es un operador que puede establecer un valor
+     * en memoria para el generador, pero también puede
+     * asignar el valor que se pase como parámetro en el
+     * método .next(), lo cual sucede de la siguiente
+     * forma (todo sobre la misma sentencia):
+     * - param = yield; asigna el valor traído por next().
+     * - yield i++; emite un nuevo valor en el next().
+     */
+    const param = yield i++;
+    console.log(param);
   }
 }
-const ginstance = helloWorld();
-console.log(ginstance.next().value);
-console.log(ginstance.next().value);
-console.log(ginstance.next().value);
+const generator = idGenerator();
+const interval = setInterval(() => {
+  const { value } = generator.next('param1');
+  console.log(`value: ${value}\n`);
+  /**
+   * Saliendo del intervalo, de otro modo genera hasta
+   * el infinito.
+   */
+  if (value === 20) {
+    clearInterval(interval);
+  }
+}, 1000);

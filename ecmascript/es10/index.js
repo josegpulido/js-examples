@@ -81,3 +81,25 @@ const texto3 = 'Lorem ipsum dolor sit amet';
 const simbolo = Symbol(texto3);
 console.log(simbolo.description);
 console.log(simbolo.toString());
+
+// ==================================================================================
+// Propiedades y métodos de clase privados ==========================================
+// ==================================================================================
+
+class Persona {
+
+  // Propiedad privada
+  #nombre;
+  
+  // Constructor
+  constructor(nombreReal) {
+    this.#nombre = nombreReal;
+  }
+
+  // Método público que hace uso de una propiedad privada
+  saludar() {
+    console.log(`Hola, soy ${this.#nombre}`);
+  }
+}
+const clancy = new Persona('Clancy');
+clancy.saludar();
