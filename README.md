@@ -11,7 +11,7 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Generación de archivos minificados de estilos CSS  y vinculación al HTML.
   - Preservación de assets.
   - Automatización de tareas como limpieza de carpeta /dist en cada $ npm run build.
-- **/http-requests**. Proyecto web con Javascript puro que consume la API de [Chistes de Chuck Norris](https://api.chucknorris.io/) a través de HTTP.
+- **/http-requests-page**. Proyecto web con Javascript puro que consume la API de [Chistes de Chuck Norris](https://api.chucknorris.io/) a través de HTTP.
   - Petición GET con fetch.
   - Promesas en cadena.
   - Subida de imagenes a Cloudinary.
@@ -75,3 +75,4 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Extracción de título h1 de la web Wikipedia con paquete puppeteer.
 - **/electron-app**. Aplicación web empaquetada para escritorio (Windows, Mac y Linux) con electron.
   - Manejo básico de empaquetamiento con paquete electron.
+- **/mediaplayer**. Media player app en Javascript puro con video de Invincible.
