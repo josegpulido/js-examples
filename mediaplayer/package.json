@@ -4,9 +4,6 @@
   "description": "Reproductor media player",
   "license": "MIT",
   "author": "José Guillermo <memo.board.9999@gmail.com>",
-  "keywords": [
-    "platzi"
-  ],
   "scripts": {
     "start": "live-server"
   },

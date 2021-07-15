@@ -76,3 +76,9 @@ Ordenadas de menor a mayor dificultad y por tecnología.
 - **/electron-app**. Aplicación web empaquetada para escritorio (Windows, Mac y Linux) con electron.
   - Manejo básico de empaquetamiento con paquete electron.
 - **/mediaplayer**. Media player app en Javascript puro con video de Invincible.
+  - Manejo básico de etiqueta de video y sus métodos.
+  - Creación y manejo básico de plugins propios.
+  - Implementación de Service Worker para cachear contenido web.
+  - Manejo de APIS del DOM:
+    - InstersectionObserver para observar los valores del viewport de la página.
+    - VisibilityChange para detectar cuando el tab del navegador ha dejado de mostrar la página.
