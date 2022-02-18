@@ -1,0 +1,3 @@
+Texto de ejemplo.
+
+Este archivo será ignorado por npm, pero subido al repositorio público de NPM.

@@ -1,0 +1,26 @@
+{
+  "name": "simple-hello-messages",
+  "version": "1.0.2",
+  "description": "Mi primer dependencia publica",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "javascript"
+  ],
+  "author": "Jose Guillermo <memo.board.9999@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "simple-hello-messages": "./bin/global.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josegpulido/js-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josegpulido/js-examples/issues"
+  },
+  "homepage": "https://github.com/josegpulido/js-examples#readme"
+}

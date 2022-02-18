@@ -3,6 +3,7 @@
 Ordenadas de menor a mayor dificultad y por tecnología.
 
 ### Indice
+- **/npm-first-package**. Creación y publicación de una [dependencia de NPM](https://www.npmjs.com/package/simple-hello-messages) invocable desde consola.
 - **/ecmascript**. Ejemplos de características de Javascript escritos en distintas versiones de ECMAScript.
 - **/webpack-page**. Configuración básica de Webpack 4+ para proyectos web con Javascript puro.
   - Configuración de entorno de desarrollo y entorno de producción mediante archivos de configuración.
@@ -82,3 +83,5 @@ Ordenadas de menor a mayor dificultad y por tecnología.
   - Manejo de APIS del DOM:
     - InstersectionObserver para observar los valores del viewport de la página.
     - VisibilityChange para detectar cuando el tab del navegador ha dejado de mostrar la página.
+- **/unit-testing**. Imitación de un framework de Unit Testing.
+  - Función it() y función _expect().
